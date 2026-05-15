@@ -1,3 +1,7 @@
 numpy
 python-dotenv==1.0.0
 streamlit
+python-docx
+pypdf
+openpyxl
+pandas

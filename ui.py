@@ -16,6 +16,7 @@ from chunking_strategies import (
 from datasets_v2 import load_dataset, list_datasets
 from evaluation import ChunkEvaluator
 from dynamic_recommender import DynamicChunkingRecommender
+from file_extraction import extract_text_from_file, get_supported_file_types
 
 # Document analysis is now handled by DynamicChunkingRecommender
 
@@ -176,8 +177,8 @@ def main():
 
     st.header("📤 Upload Documents")
     uploaded_files = st.file_uploader(
-        "Upload text files for analysis",
-        type=['txt', 'md'],
+        "Upload documents for analysis (supported: TXT, MD, PDF, DOCX, XLSX, XLS)",
+        type=get_supported_file_types(),
         accept_multiple_files=True
     )
 
@@ -187,8 +188,23 @@ def main():
     if uploaded_files:
         st.subheader("📋 Uploaded Files")
         for uploaded_file in uploaded_files:
-            text = uploaded_file.read().decode('utf-8')
-            file_data[uploaded_file.name] = text
+            try:
+                # Get file extension
+                file_ext = Path(uploaded_file.name).suffix.lower().strip('.')
+                
+                # Read file content
+                file_content = uploaded_file.read()
+                
+                # Extract text based on file type
+                text, success = extract_text_from_file(file_content, file_ext)
+                
+                if success:
+                    file_data[uploaded_file.name] = text
+                    st.success(f"✅ {uploaded_file.name} loaded successfully ({len(text)} characters)")
+                else:
+                    st.error(f"❌ Error loading {uploaded_file.name}: {text}")
+            except Exception as e:
+                st.error(f"❌ Error processing {uploaded_file.name}: {str(e)}")
 
     if selected_dataset != "None":
         try:
