@@ -1,0 +1,86 @@
+# API Documentation
+
+## Authentication
+
+The API uses OAuth 2.0 for authentication. All requests must include a valid access token in the Authorization header.
+
+```
+Authorization: Bearer YOUR_ACCESS_TOKEN
+```
+
+To obtain an access token, send a POST request to the /oauth/token endpoint with your client credentials.
+
+## Endpoints
+
+### GET /api/v1/users/:id
+
+Retrieve user information by user ID.
+
+**Parameters:**
+- id (required): The unique identifier of the user
+- include_metadata (optional): Include additional user metadata (boolean)
+
+**Response:**
+```json
+{
+  "id": "user123",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "created_at": "2024-01-01T00:00:00Z"
+}
+```
+
+### POST /api/v1/users
+
+Create a new user account.
+
+**Request Body:**
+```json
+{
+  "name": "Jane Smith",
+  "email": "jane@example.com",
+  "password": "secure_password"
+}
+```
+
+**Response:**
+Returns the created user object with HTTP status 201.
+
+### DELETE /api/v1/users/:id
+
+Delete a user account.
+
+**Parameters:**
+- id (required): The unique identifier of the user to delete
+
+**Response:**
+Returns HTTP status 204 on success.
+
+## Error Handling
+
+The API returns standard HTTP status codes and error messages in the following format:
+
+```json
+{
+  "error": {
+    "code": "INVALID_REQUEST",
+    "message": "The request parameters are invalid"
+  }
+}
+```
+
+Common error codes include:
+- INVALID_REQUEST: The request parameters are malformed
+- UNAUTHORIZED: Authentication failed or token is invalid
+- FORBIDDEN: User does not have permission for this resource
+- NOT_FOUND: The requested resource does not exist
+- RATE_LIMIT_EXCEEDED: Too many requests sent in a short time period
+
+## Rate Limiting
+
+The API enforces rate limiting at 1000 requests per hour per API key.
+Rate limit information is included in response headers:
+
+- X-RateLimit-Limit: Total requests allowed
+- X-RateLimit-Remaining: Requests remaining in current window
+- X-RateLimit-Reset: Unix timestamp when the limit resets

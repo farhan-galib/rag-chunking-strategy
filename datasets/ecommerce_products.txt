@@ -1,0 +1,66 @@
+# Product Catalog
+
+## Product 1: Wireless Noise-Cancelling Headphones
+
+### Overview
+
+Experience premium audio quality with our flagship wireless noise-cancelling headphones. 
+Engineered for comfort and performance, these headphones deliver immersive sound for music enthusiasts and professionals alike.
+
+### Key Features
+
+- Active Noise Cancellation: Advanced noise cancellation technology reduces ambient noise by up to 30dB
+- Bluetooth 5.0: Seamless wireless connectivity up to 30 meters
+- Battery Life: Up to 40 hours of continuous playback on a single charge
+- Comfort Design: Ergonomic padding and adjustable headband for extended wear
+- Premium Drivers: Custom-tuned 40mm drivers deliver rich, balanced sound
+
+### Technical Specifications
+
+- Frequency Response: 20Hz - 20kHz
+- Impedance: 32 Ohms
+- Sensitivity: 105dB SPL at 1kHz
+- Bluetooth Version: 5.0
+- Codecs Supported: AAC, SBC, aptX, LDAC
+
+### What's in the Box
+
+- Headphones with detachable cable
+- USB-C charging cable
+- 3.5mm audio cable
+- Carrying case
+- User manual and warranty information
+
+### Customer Support
+
+We offer 2-year manufacturer's warranty and 30-day money-back guarantee. 
+Customer support is available 24/7 via email, phone, and live chat.
+
+## Product 2: Portable Solar Power Bank
+
+### Overview
+
+The ultimate portable charging solution for outdoor enthusiasts and travelers. 
+This solar-powered power bank harnesses the sun's energy to keep your devices charged anywhere.
+
+### Key Features
+
+- Solar Panel: High-efficiency 10W solar panel charges in sunlight
+- Capacity: 25,000mAh battery capacity
+- Dual USB Ports: Charge two devices simultaneously
+- Fast Charging: Quick Charge 3.0 support for rapid charging
+- Rugged Design: Water-resistant, dustproof, and shockproof
+- LED Indicator: Battery level display with LED flashlight
+
+### Specifications
+
+- Battery Type: Lithium Polymer
+- Solar Charging Time: 30-40 hours (depending on sunlight)
+- USB Charging Time: 8-10 hours
+- Output: Dual USB 5V/2.4A
+- Dimensions: 150 x 85 x 20mm
+- Weight: 450g
+
+### Warranty
+
+Covered by 1-year manufacturer's warranty against defects in materials and workmanship.

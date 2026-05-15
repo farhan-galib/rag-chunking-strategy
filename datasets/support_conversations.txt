@@ -1,0 +1,43 @@
+# Customer Support Ticket #12345
+
+## Ticket Summary
+Customer unable to reset password and locked out of account.
+
+## Conversation History
+
+**Customer (2024-05-07 10:15 AM):**
+I'm unable to reset my password. I've tried clicking the "Forgot Password" link multiple times, but I'm not receiving the reset email. 
+This is really urgent as I need to access my account today for an important transaction.
+
+**Support Agent - Sarah (2024-05-07 10:30 AM):**
+Thank you for contacting us. I understand how frustrating this situation must be. Let me help you resolve this issue.
+
+First, could you please confirm:
+1. The email address associated with your account
+2. Whether you've checked your spam/junk folder for the reset email
+3. If you're using a corporate email or Gmail/Outlook
+
+**Customer (2024-05-07 10:45 AM):**
+The email is john.smith@company.com (corporate email). Yes, I've checked spam already. No reset email appears anywhere.
+
+**Support Agent - Sarah (2024-05-07 11:00 AM):**
+Thank you for confirming those details. Corporate email filters can sometimes block our password reset emails. 
+
+I've manually reset your password and sent you a new reset link to john.smith@company.com. 
+Please check your email within the next 5 minutes and follow the reset link. 
+
+If you don't see the email, please:
+1. Contact your IT department to check email filtering rules
+2. Ask them to whitelist emails from reset@ourservice.com
+
+Please let me know once you've successfully reset your password.
+
+**Customer (2024-05-07 11:15 AM):**
+Great! I received the email and successfully reset my password. I'm now able to access my account. Thank you so much for the quick help!
+
+**Support Agent - Sarah (2024-05-07 11:20 AM):**
+Excellent! I'm glad we could resolve this for you. To prevent this issue in the future, consider adding our domain to your corporate email's whitelist.
+
+If you encounter any other issues, please don't hesitate to reach out. We're here to help!
+
+**Ticket Status: RESOLVED**

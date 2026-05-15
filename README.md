@@ -1,6 +1,6 @@
 # RAG Chunking Strategy Project
 
-A comprehensive implementation of various text chunking strategies for Retrieval-Augmented Generation (RAG) based AI solutions.
+A comprehensive implementation of various text chunking strategies for Retrieval-Augmented Generation (RAG) based AI solutions with **intelligent dynamic recommendations**.
 
 ## 📚 Overview
 
@@ -12,35 +12,68 @@ This project demonstrates multiple chunking techniques used in RAG systems:
 4. **Recursive/Hierarchical Chunking** - Structure-preserving chunking based on document sections
 5. **Hybrid Chunking** - Combines multiple strategies for optimal results
 
+## ✨ New Dynamic Features
+
+- **Intelligent Analysis**: Automatically analyzes document characteristics (length, complexity, structure, semantic density)
+- **Adaptive Recommendations**: Goes beyond simple document type detection to consider content-specific factors
+- **Confidence Scoring**: Provides confidence levels for recommendations with alternative strategies
+- **Parameter Optimization**: Dynamically adjusts chunking parameters based on content analysis
+- **Content Insights**: Shows detailed analysis of what influenced the recommendation
+
 ## 🚀 Quick Start
 
 ### Installation
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Command Line Demo
+
+```bash
 python main.py
 ```
 
-### Basic Usage
+### Web UI
 
-```python
-from chunking_strategies import SemanticChunking
-from datasets import DATASETS
+Launch the interactive web interface for document analysis and chunking recommendations:
 
-# Get sample text
-text = DATASETS['technical_faq']
-
-# Create chunker
-chunker = SemanticChunking(max_chunk_size=500)
-
-# Generate chunks
-chunks = chunker.chunk(text, source='technical_faq')
-
-# Analyze chunks
-from chunking_strategies import ChunkAnalyzer
-analysis = ChunkAnalyzer.analyze_chunks(chunks)
-print(f"Created {analysis['total_chunks']} chunks")
+```bash
+streamlit run ui.py
 ```
+
+Then open http://localhost:8501 in your browser.
+
+**Features:**
+- Upload multiple text files (.txt, .md) for analysis
+- Choose from pre-loaded sample datasets
+- **Dynamic chunking strategy recommendations based on content analysis**
+- **Confidence scores and alternative strategy suggestions**
+- **Content analysis insights showing semantic density, structural complexity, etc.**
+- **Business dashboard page with plain-English readiness summaries and chart-based insights**
+- Detailed quality metrics and chunk previews
+
+**Try it out:**
+1. Use the included `sample_legal.txt` file to test document upload
+2. Select different built-in datasets from the sidebar
+3. Compare dynamic recommendations for different document types
+4. Explore content analysis insights to understand recommendation reasoning
+
+## 🎯 Web UI Features
+
+- **Document Upload**: Upload multiple text files (.txt, .md) for analysis
+- **Built-in Datasets**: Choose from pre-loaded sample datasets
+- **Automatic Analysis**: Detect document type and content characteristics
+- **Smart Recommendations**: Get personalized chunking strategy recommendations
+- **Detailed Metrics**: View chunking quality scores and statistics
+- **Sample Chunks**: Preview how your documents will be chunked
+
+## 📊 Included Datasets
+
+1. **Technical FAQ** - FAQ-style technical documentation
+2. **Legal Document** - Structured legal/terms of service
+3. **Medical Research** - Academic research paper with sections
+4. **Code Documentation** - API documentation
 
 ## 📊 Included Datasets
 
