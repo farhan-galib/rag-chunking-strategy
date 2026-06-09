@@ -109,14 +109,6 @@ recursive = RecursiveChunking(max_chunk_size=1000, chunk_overlap=100)
 - `ui.py` is the Streamlit application for uploading files and viewing interactive chunking recommendations.
 - `datasets/` contains `.txt` sample datasets; additional PDF files are included for future extraction or testing workflows.
 
-## 📄 License
-
-MIT License
-
-## 🤝 Contributing
-
-Contributions welcome! Please submit PRs or open issues.
-
 ## 📧 Contact
 
 **Farhan Noor Galib**  
