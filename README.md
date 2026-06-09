@@ -19,6 +19,8 @@ This repository implements several chunking techniques used in RAG applications:
 - **Multi-format upload support** for TXT, MD, PDF, DOCX, XLSX, and XLS
 - **Dynamic recommendations** with confidence scoring and alternative strategies
 - **Content analysis insights** including semantic preservation, boundary quality, and retrieval readiness
+- **Executive analytics dashboard** for chunking performance and comparison
+- **Strategy simulation** playground to test chunking behavior before applying it
 - **Built-in text datasets** for quick experimentation
 
 ## 🚀 Quick Start
@@ -78,6 +80,8 @@ The following datasets are available in the app sidebar:
 - Recommend the best chunking strategy for RAG workflows
 - Show confidence and alternative strategy options
 - Display chunk-level analysis and readiness summaries
+- View executive analytics for strategy performance
+- Run strategy simulations to preview chunking outcomes
 
 ## 📊 Evaluation Metrics
 
@@ -104,6 +108,14 @@ recursive = RecursiveChunking(max_chunk_size=1000, chunk_overlap=100)
 - `main.py` is a CLI demonstration that runs through the available text datasets.
 - `ui.py` is the Streamlit application for uploading files and viewing interactive chunking recommendations.
 - `datasets/` contains `.txt` sample datasets; additional PDF files are included for future extraction or testing workflows.
+
+## 📄 License
+
+MIT License
+
+## 🤝 Contributing
+
+Contributions welcome! Please submit PRs or open issues.
 
 ## 📧 Contact
 
