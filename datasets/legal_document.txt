@@ -1,0 +1,46 @@
+# TERMS OF SERVICE AGREEMENT
+
+## 1. DEFINITIONS AND INTERPRETATION
+
+1.1 In this Agreement, unless the context otherwise requires, the following terms shall have the meanings respectively assigned to them:
+
+"Agreement" means this terms of service agreement including all schedules and appendices, as amended from time to time.
+
+"Service" means the online platform and related services provided by the Company to Users.
+
+"User" means any individual or entity that accesses or uses the Service.
+
+"Content" means any information, data, materials, or communications provided by Users or third parties on the Service.
+
+1.2 The singular includes the plural and vice versa. Words importing a person include a firm and a body corporate.
+
+## 2. ACCEPTANCE OF TERMS
+
+2.1 By accessing and using the Service, you acknowledge that you have read, understood, and agree to be bound by this Agreement.
+
+2.2 If you do not agree to be bound by this Agreement, you may not access or use the Service.
+
+2.3 The Company reserves the right to modify this Agreement at any time, and such modifications shall be effective upon posting to the Service.
+
+## 3. USER RESPONSIBILITIES
+
+3.1 Users are responsible for maintaining the confidentiality of their account credentials and for all activities conducted under their account.
+
+3.2 Users agree not to engage in any conduct that could interfere with or impair the function of the Service.
+
+3.3 Users shall not upload, post, or transmit any content that is unlawful, defamatory, obscene, or otherwise objectionable.
+
+3.4 Users grant the Company a non-exclusive, worldwide license to use, reproduce, and display User-submitted Content.
+
+## 4. LIMITATION OF LIABILITY
+
+4.1 In no event shall the Company be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with this Agreement or the Service.
+
+4.2 The Company's total liability shall not exceed the amount paid by the User in the twelve months preceding the claim.
+
+## 5. DISPUTE RESOLUTION
+
+5.1 Any disputes arising under this Agreement shall be governed by the laws of the jurisdiction in which the Company is located.
+
+5.2 Both parties agree to attempt to resolve disputes through good faith negotiation before pursuing legal action.
+5.3 If negotiation fails, disputes shall be resolved through binding arbitration.
