@@ -1,24 +1,25 @@
 # RAG Chunking Strategy Project
 
-A comprehensive implementation of various text chunking strategies for Retrieval-Augmented Generation (RAG) based AI solutions with **intelligent dynamic recommendations**.
+A working demo of document chunking strategies for Retrieval-Augmented Generation (RAG) systems with dynamic strategy recommendations.
 
 ## 📚 Overview
 
-This project demonstrates multiple chunking techniques used in RAG systems:
+This repository implements several chunking techniques used in RAG applications:
 
-1. **Fixed-Size Chunking** - Simple, deterministic chunks of fixed length
-2. **Sliding Window Chunking** - Overlapping chunks with configurable step size
-3. **Semantic Chunking** - Context-aware chunking based on sentences and paragraphs
-4. **Recursive/Hierarchical Chunking** - Structure-preserving chunking based on document sections
-5. **Hybrid Chunking** - Combines multiple strategies for optimal results
+1. **Fixed-Size Chunking** - deterministic chunks of fixed length
+2. **Sliding Window Chunking** - overlapping chunks with configurable step size
+3. **Semantic Chunking** - content-aware chunking based on sentence and paragraph structure
+4. **Recursive/Hierarchical Chunking** - structure-preserving chunking that respects document sections
+5. **Hybrid Chunking** - combines multiple strategies for balanced results
 
-## ✨ New Dynamic Features
+## ✨ What’s Included
 
-- **Intelligent Analysis**: Automatically analyzes document characteristics (length, complexity, structure, semantic density)
-- **Adaptive Recommendations**: Goes beyond simple document type detection to consider content-specific factors
-- **Confidence Scoring**: Provides confidence levels for recommendations with alternative strategies
-- **Parameter Optimization**: Dynamically adjusts chunking parameters based on content analysis
-- **Content Insights**: Shows detailed analysis of what influenced the recommendation
+- **Interactive Streamlit UI** in `ui.py`
+- **Command-line demo** in `main.py`
+- **Multi-format upload support** for TXT, MD, PDF, DOCX, XLSX, and XLS
+- **Dynamic recommendations** with confidence scoring and alternative strategies
+- **Content analysis insights** including semantic preservation, boundary quality, and retrieval readiness
+- **Built-in text datasets** for quick experimentation
 
 ## 🚀 Quick Start
 
@@ -30,114 +31,79 @@ pip install -r requirements.txt
 
 ### Command Line Demo
 
+Run the terminal demo to exercise the chunking strategies across sample datasets:
+
 ```bash
 python main.py
 ```
 
 ### Web UI
 
-Launch the interactive web interface for document analysis and chunking recommendations:
+Start the interactive Streamlit app:
 
 ```bash
 streamlit run ui.py
 ```
 
-Then open http://localhost:8501 in your browser.
+Then open `http://localhost:8501` in your browser.
 
-**Features:**
-- Upload multiple text files (.txt, .md) for analysis
-- Choose from pre-loaded sample datasets
-- **Dynamic chunking strategy recommendations based on content analysis**
-- **Confidence scores and alternative strategy suggestions**
-- **Content analysis insights showing semantic density, structural complexity, etc.**
-- **Business dashboard page with plain-English readiness summaries and chart-based insights**
-- Detailed quality metrics and chunk previews
+## 🎛️ Supported Inputs
 
-**Try it out:**
-1. Use the included `sample_legal.txt` file to test document upload
-2. Select different built-in datasets from the sidebar
-3. Compare dynamic recommendations for different document types
-4. Explore content analysis insights to understand recommendation reasoning
+The app supports uploading:
 
-## 🎯 Web UI Features
+- `.txt`
+- `.md`
+- `.pdf`
+- `.docx`
+- `.xlsx`
+- `.xls`
 
-- **Document Upload**: Upload multiple text files (.txt, .md) for analysis
-- **Built-in Datasets**: Choose from pre-loaded sample datasets
-- **Automatic Analysis**: Detect document type and content characteristics
-- **Smart Recommendations**: Get personalized chunking strategy recommendations
-- **Detailed Metrics**: View chunking quality scores and statistics
-- **Sample Chunks**: Preview how your documents will be chunked
+It also lets you choose from built-in sample datasets loaded from `datasets/*.txt`.
 
-## 📊 Included Datasets
+## 📦 Built-in Sample Datasets
 
-1. **Technical FAQ** - FAQ-style technical documentation
-2. **Legal Document** - Structured legal/terms of service
-3. **Medical Research** - Academic research paper with sections
-4. **Code Documentation** - API documentation
+The following datasets are available in the app sidebar:
 
-## 📊 Included Datasets
+- `technical_faq`
+- `legal_document`
+- `medical_research`
+- `code_documentation`
+- `ecommerce_products`
+- `support_conversations`
 
-1. **Technical FAQ** - FAQ-style technical documentation
-2. **Legal Document** - Structured legal/terms of service
-3. **Medical Research** - Academic research paper with sections
-4. **Code Documentation** - API documentation
-5. **E-commerce Products** - Product descriptions
-6. **Support Conversations** - Customer support tickets
+## 🧪 What the App Does
 
-## 📈 Evaluation Metrics
+- Upload or select sample documents
+- Automatically detect document characteristics
+- Recommend the best chunking strategy for RAG workflows
+- Show confidence and alternative strategy options
+- Display chunk-level analysis and readiness summaries
 
-Each chunking strategy is evaluated on:
+## 📊 Evaluation Metrics
 
-- **Coherence Score** - Uniformity of chunk sizes
-- **Semantic Preservation** - How well meaning is preserved
-- **Retrieval Efficiency** - Optimal chunk size for retrieval
-- **Boundary Quality** - Quality of chunk boundaries
-- **Overall Quality** - Weighted combination of above metrics
+Each strategy is evaluated using:
 
-## 🔧 Configuration
+- **Overall Quality** - aggregate chunking effectiveness
+- **Semantic Preservation** - meaning retention across chunks
+- **Boundary Quality** - chunk cut point quality
+- **Retrieval Efficiency** - expected retrieval performance
 
-Each strategy accepts customizable parameters:
+## 🔧 Extending the Code
+
+You can adjust strategy parameters in code:
 
 ```python
-# Fixed-size with 30% overlap
 fixed = FixedSizeChunking(chunk_size=500, overlap=150)
-
-# Semantic with size constraints
 semantic = SemanticChunking(max_chunk_size=600, min_chunk_size=100)
-
-# Sliding window with custom step
 window = SlidingWindowChunking(window_size=400, step_size=200)
-
-# Recursive with overlap
 recursive = RecursiveChunking(max_chunk_size=1000, chunk_overlap=100)
 ```
 
-## 📝 Best Practices
+## 💡 Notes
 
-1. **Choose chunk size based on use case**
-   - FAQ/Q&A: 300-400 chars
-   - Long documents: 500-800 chars
-   - Code: 200-400 chars
-
-2. **Consider semantic boundaries**
-   - Use semantic chunking for complex documents
-   - Preserve section headers and structure
-
-3. **Test with your data**
-   - Use the evaluation metrics to compare strategies
-   - Different data types may require different approaches
-
-4. **Optimize for retrieval**
-   - Balance chunk size with retrieval latency
-   - Consider embedding model input limits
-
-## 🎯 Use Cases
-
-- **Document Retrieval Systems** - Split documents for semantic search
-- **FAQ Chatbots** - Question-answer pair chunking
-- **Code Documentation** - Structure-preserving chunking
-- **Legal Analysis** - Preserve document hierarchy
-- **Research Paper Analysis** - Section-aware chunking
+- `main.py` is a CLI demonstration that runs through the available text datasets.
+- `ui.py` is the Streamlit application for uploading files and viewing interactive chunking recommendations.
+- `datasets/` contains `.txt` sample datasets; additional PDF files are included for future extraction or testing workflows.
 
 ## 📄 License
 
@@ -145,8 +111,8 @@ MIT License
 
 ## 🤝 Contributing
 
-Contributions welcome! Please feel free to submit PRs or open issues.
+Contributions welcome! Please submit PRs or open issues.
 
 ## 📧 Contact
 
-For questions or suggestions, please reach out.
+For questions or suggestions, feel free to reach out.
