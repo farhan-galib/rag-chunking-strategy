@@ -116,7 +116,7 @@ Contributions welcome! Please submit PRs or open issues.
 ## 📧 Contact
 
 **Farhan Noor Galib**  
-Solution Architect | Data Analytics, AI & Data Transformation Leader
+Solution Architect | Data Analytics, AI & Data Transformation
 
 - 📧 Email: [farhan.n.galib@gmail.com](mailto:farhan.n.galib@gmail.com)
 - 📍 Location: Regina, Saskatchewan, Canada
