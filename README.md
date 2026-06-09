@@ -109,10 +109,6 @@ recursive = RecursiveChunking(max_chunk_size=1000, chunk_overlap=100)
 
 MIT License
 
-## 🤝 Contributing
-
-Contributions welcome! Please submit PRs or open issues.
-
 ## 📧 Contact
 
 **Farhan Noor Galib**  
