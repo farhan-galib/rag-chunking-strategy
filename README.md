@@ -4,9 +4,11 @@
 
 A working demo of document chunking strategies for Retrieval-Augmented Generation (RAG) systems with dynamic strategy recommendations.
 
+## 🎬 Demo
 
+[![Demo Video](https://raw.githubusercontent.com/farhan-galib/rag-chunking-strategy/main/demo/thumbnail.png)](https://github.com/farhan-galib/rag-chunking-strategy/blob/main/demo/RAG%20Chunking%20Analyzer.mp4)
 
-
+> Click the image above to watch the demo
 
 ## 📚 Overview
 
