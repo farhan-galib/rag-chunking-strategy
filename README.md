@@ -1,6 +1,6 @@
 
 
-# RAG Chunking Strategy Project
+# RAG Chunking Strategy Advisor
 
 A working demo of document chunking strategies for Retrieval-Augmented Generation (RAG) systems with dynamic strategy recommendations.
 
