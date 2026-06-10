@@ -1,6 +1,12 @@
+
+
 # RAG Chunking Strategy Project
 
 A working demo of document chunking strategies for Retrieval-Augmented Generation (RAG) systems with dynamic strategy recommendations.
+
+
+
+
 
 ## 📚 Overview
 
